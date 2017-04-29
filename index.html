@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Number guessing game</title>
+  </head>
+
+  <body>
+     <div id="container">
+          <h1>Guess the number</h1>
+
+          <h2>Rules</h2>
+          <ul>
+              <li>Computer selected number from 1 to 100</li>
+              <li>Your task is to guess that number</li>
+              <li>You have 5 tries</li><hr>
+          </ul>
+
+
+         <form>
+          <label for="guess">Enter Your Number: </label>
+          <input type="number" id="guess" class="guess" min="1" max="100" required>
+          <input type="submit" value="Check" class="guessSubmit">
+          </form>
+
+
+        <div class="output">
+          <p class="guesses"></p>
+          <p class="lastGuess"></p>
+          <p class="hiLow"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    
+    </body>
+</html>
